@@ -176,7 +176,7 @@ def process_conversations(conversation_context_list: List[str], pipe) -> Dict[st
 def main():
     try:
         # Load transcription data
-        ip_path = r"/Workspace/Users/sshibu@pplweb.com/GPU_End_To_End_Code_Execution/Production_Code/transcriptions/gpu_transcriptions_redacted_call_sid_based.parquet"
+        ip_path = r"gpu_transcriptions_redacted_call_sid_based.parquet"
         transcription = load_transcription(ip_path).iloc[:15, :]
         print("Transcription data loaded successfully.")
 
